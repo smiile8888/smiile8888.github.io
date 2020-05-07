@@ -6,7 +6,7 @@
 name: Thanyathorn (Smile) Thanapattheerakul
 
 # Short bio or description (displayed in the header)
-description: Full Stack Web Developer underpinned with research approach
+description: Full Stack Web Developer underpinned with practical research approach
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
@@ -22,7 +22,7 @@ footer-links:
   facebook:
   flickr:
   github: smiile8888/smiile.github.io
-  instagram:
+  instagram: smiile8888
   linkedin: thanyathorn-thanapattheerakul
   pinterest:
   rss: # just type anything here for a working RSS icon

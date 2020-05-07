@@ -1,11 +1,11 @@
-## It's *__SMIILE__'s* Profile 😊
+## It's *__SMILE__'s* Profile 😊
 
-This is the repository for my online portfolio.
-
+This is the repository for my e-portfolio.
+--
 ### Want to use this layout?
 If you want to use this layout, feel free to fork!
 You can follow the following steps to run on your local machine:
-1. Install Ruby, follow the instruction on (this page)[https://jekyllrb.com/docs/installation/windows/]
+1. Install Ruby, follow the instruction on [here for Windows](https://jekyllrb.com/docs/installation/windows/) and [here for Mac]()
 2. Install Jekyll and plug-ins
 ```gem install github-pages```
 3. Clone down your repository forked from here.
