@@ -1,16 +1,92 @@
 body, html {
     height: 100%;
+    margin: 0px;
     font-family: "Inconsolata", sans-serif;
-  }
-  
-  .bgimg {
+}
+
+.container a:hover {
+    background-color: rgb(58, 214, 162);
+    color: #013220;
+    padding: 8px;
+}
+
+.bgimg {
     background-position: center;
     background-size: cover;
-    /* TODO: Change header to my photo */
-    background-image: url("../asset/img/coffeehouse.jpg");
-    min-height: 75%;
-  }
-  
-  .menu {
+    background-image: url("../asset/img/header_smile_right.jpg");
+    min-height: 680px;
+}
+
+.container {
+    margin: 80px 80px 0px 80px;
+}
+
+.home {
+    text-align: left;
+}
+
+.nav-left {
+    display: inline-flex;
+    width: 40%;
+}
+
+.nav-right {
+    display: inline-flex;
+    width: 60%;
+}
+
+.hamburger {
     display: none;
-  }
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.section-header {
+    background-color: #000;
+    color: #fff;
+    display: inline-block;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+    letter-spacing: 4px;
+}
+
+#topnav {
+    display: inline-flex;
+    top: 0;
+    left: 0;
+    color: #fff !important;
+    background-color: #000 !important;
+    padding: 8px 16px !important;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+@media only screen and (max-width: 690px) {
+    .nav-right{
+         display: none;
+    }
+    .nav-left, .nav-right {
+        width: 100%;
+    }
+    .hamburger::before {
+        content: "\2630";
+        color: #ffffff;
+    }
+    .hamburger {
+        display: inline-flex;
+        float: right;
+    }
+    #topnav {
+        display: block;
+    }
+    #topnav.responsive .nav-right{
+        float: none;
+        display: block;
+      }
+}
+
+.menu {
+    display: none;
+}

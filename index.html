@@ -1,148 +1,153 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>Smile's World</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+  <title>Smile's World</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/png" href="asset/img/icon.jpg" />
 </head>
+
 <body>
 
-<!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
-    <div class="w3-col s4">
-      <a href="#" class="w3-button w3-block w3-black">SMILE's</a>
+  <!-- Links (sit on top) -->
+  <div id="topnav">
+    <div class="nav-left">
+      <a href="#" class="w3-button w3-block w3-black home">SMILE's</a>
+      <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()"></a>
     </div>
-    <div class="w3-col s2">
+    <div class="nav-right">
       <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s2">
       <a href="#experience" class="w3-button w3-block w3-black">EXPERIENCE</a>
-    </div>
-    <div class="w3-col s2">
       <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
-    </div>
-    <div class="w3-col s2">
       <a href="#blog" class="w3-button w3-block w3-black">BLOG</a>
     </div>
   </div>
-</div>
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:40px">Welcome to<br>Smile's World 🤗</span>
-  </div>
-</header>
-
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
-
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">THE SMILE</span></h5>
-    <p>Smile is a full-stack web engineer, who is also thrilled in leadership and entrepreneurship. Likewise, she utilizes her right-brain for design, performance, and creativity, like craft, singing, and photographs.</p>
-    <p></p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Give me six hours to chop down a tree and I will spend the first four sharpening the axe.</i></p>
-      <p class="w3-right">-- Abraham Lincoln</p>
-    </div>
-  </div>
-</div>
-
-<!-- Menu Container -->
-<div class="w3-container" id="experience">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EXPERIENCE</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'work');" id="myLink">
-        <div class="w3-col s6 tablink">Work</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'publication');">
-        <div class="w3-col s6 tablink">Publication</div>
-      </a>
+  <div class="container">
+    <!-- Header with image -->
+    <div class="bgimg w3-display-container w3-grayscale-min" id="home">
+      <div class="w3-display-middle">
+        <span class="w3-text-white" style="font-size:40px">Welcome to Smile's World 🤗</span>
+      </div>
     </div>
 
-    <div id="work" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Lead Software Engineer</h5>
-      <p class="w3-text-black">Centivizer Inc.</p>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5>Research Assistant</h5>
-      <p class="w3-text-black">School of Information Technology,
-          <br>
-          King Mongkut's University of Technology Thonburi
-      </p>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p>
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-64"><span class="section-header">THE SMILE</span></h5>
+          <p>Smile is a full-stack web engineer, who is also thrilled in leadership and entrepreneurship. Likewise, she
+            utilizes her right-brain for design, performance, and creativity, like craft, singing, and
+            <a href="https://www.eyeem.com/u/smiile8888" target="_blank">photographs</a>.</p>
+          <p></p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p><i>"Give me six hours to chop down a tree and I will spend the first four sharpening the axe.</i></p>
+            <p class="w3-right">-- Abraham Lincoln</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="experience">
+        <div class="w3-content" style="max-width:700px">
+
+          <h5 class="w3-center w3-padding-48"><span class="section-header">EXPERIENCE</span></h5>
+
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'work');" id="myLink">
+              <div class="w3-col s6 tablink">Work</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'publication');">
+              <div class="w3-col s6 tablink">Publication</div>
+            </a>
+          </div>
+
+          <div id="work" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Lead Software Engineer</h5>
+            <p class="w3-text-black">Centivizer Inc.</p>
+            <p class="w3-text-grey"></p><br>
+
+            <h5>Research Assistant</h5>
+            <p class="w3-text-black">School of Information Technology,
+              <br>
+              King Mongkut's University of Technology Thonburi
+            </p>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p>
+          </div>
+
+          <div id="publication" class="w3-container menu w3-padding-48 w3-card">
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="contact" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-48"><span class="section-header">WHERE TO CONNECT</span></h5>
+          <p><span class="w3-tag">FYI!</span> Smile'd be so happy to connect with you all 😉</p>
+          <!-- <img src="./asset/img/map.jpg" class="w3-image" style="width:100%"> -->
+          <form action="mailto:th.thanyathorn@gmail.com" method="post" enctype="text/plain" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="mail" placeholder="Email" required name="Mail"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required
+                name="Message">
+            </p>
+            <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button> <button class="w3-button w3-gray"
+                type="reset">RESET</button></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- End page content -->
     </div>
-
-    <div id="publication" class="w3-container menu w3-padding-48 w3-card">
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p>
-    </div>  
   </div>
-</div>
 
-<!-- Contact/Area Container -->
-<div class="w3-container" id="contact" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO CONNECT</span></h5>
-    <p><span class="w3-tag">FYI!</span> Smile'd be so happy to connect with you all 😉</p>
-    <img src="./asset/img/map.jpg" class="w3-image" style="width:100%">
-    <form action="mailto:th.thanyathorn@gmail.com" method="post" enctype="text/plain" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="mail" placeholder="Email" required name="Mail"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button> <button class="w3-button w3-gray" type="reset">RESET</button></p>
-    </form>
-  </div>
-</div>
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-    <a href="https://www.linkedin.com/in/thanyathorn-thanapattheerakul/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <a href="https://www.linkedin.com/in/thanyathorn-thanapattheerakul/" target="_blank"><i
+        class="fa fa-linkedin w3-hover-opacity"></i></a>
     <a href="https://github.com/smiile8888" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
     <a href="https://twitter.com/smiile8888" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <div>
-        <p>Copyright © 2020<br>Thanyatahorn Thanapattheerakul</p>
+      <p>Copyright © 2020<br>Thanyatahorn Thanapattheerakul</p>
     </div>
-</footer>
+  </footer>
 
-<script src="./js/app.js"></script>
-<script>
+  <script src="./js/app.js"></script>
+  <script>
     document.getElementById("myLink").click();
-</script>
+  </script>
 
 </body>
+
 </html>
