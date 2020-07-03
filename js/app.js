@@ -17,9 +17,29 @@ function openMenu(evt, menuName) {
 function toggleMenu() {
   var x = document.querySelector("#topnav");
   x.classList.toggle("responsive");
-  // if (x.className === "topnav") {
-  //   x.className += " responsive";
-  // } else {
-  //   x.className = "topnav";
-  // }
 }
+window.onload = function () {
+
+}
+$(".navbar a, footer a[href='#myPage']").on("click", function (event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+    var hash = this.hash;
+    $("html, body").animate(
+      { scrollTop: $(hash).offset().top },
+      500,
+      function () {
+        window.location.hash = hash;
+      }
+    );
+  }
+});
+$(window).scroll(function () {
+  $(".slideanim").each(function () {
+    var pos = $(this).offset().top;
+    var winTop = $(window).scrollTop();
+    if (pos < winTop + 600) {
+      $(this).addClass("slide");
+    }
+  });
+});
