@@ -18,9 +18,7 @@ function toggleMenu() {
   var x = document.querySelector("#topnav");
   x.classList.toggle("responsive");
 }
-window.onload = function () {
 
-}
 $(".navbar a, footer a[href='#myPage']").on("click", function (event) {
   if (this.hash !== "") {
     event.preventDefault();
