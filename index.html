@@ -8,29 +8,37 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/gtag.js"></script>
 </head>
 <body>
 
 <!-- Links (sit on top) -->
-<div class="w3-top">
-  <div class="w3-row w3-padding w3-black">
+<!-- <div class="w3-top"> -->
+  <div class="topnav w3-row w3-padding w3-black" id="myTopnav">
     <div class="w3-col s4">
-      <a href="#" class="w3-button w3-block w3-black">SMILE's</a>
+      <a href="#" class="w3-button w3-block w3-black home-nav">SMILE's</a>
     </div>
     <div class="w3-col s2">
-      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
     </div>
     <div class="w3-col s2">
-      <a href="#experience" class="w3-button w3-block w3-black">EXPERIENCE</a>
+        <a href="#experience" class="w3-button w3-block w3-black">EXPERIENCE</a>
     </div>
     <div class="w3-col s2">
-      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+        <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
     </div>
     <div class="w3-col s2">
-      <a href="#blog" class="w3-button w3-block w3-black">BLOG</a>
+        <a href="#blog" class="w3-button w3-block w3-black">BLOG</a>
     </div>
+    <div class="w3-col s8">
+        <a href="javascript:void(0);" class="icon w3-button w3-block w3-black" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+    
+    
   </div>
-</div>
+<!-- </div> -->
 
 <!-- Header with image -->
 <header class="bgimg w3-display-container w3-grayscale-min" id="home">
