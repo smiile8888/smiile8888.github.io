@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Smile's World</title>
     <meta charset="UTF-8">
@@ -10,25 +11,20 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./js/gtag.js"></script>
 </head>
+
 <body>
 
-<!-- Links (sit on top) -->
-<!-- <div class="w3-top"> -->
-  <div class="topnav w3-row w3-padding w3-black" id="myTopnav">
-    <div class="w3-col s4">
-      <a href="#" class="w3-button w3-block w3-black home-nav">SMILE's</a>
+  <!-- Links (sit on top) -->
+  <div id="topnav">
+    <div class="nav-left">
+      <a href="#" class="w3-button w3-block w3-black home">SMILE's</a>
+      <a href="javascript:void(0);" class="hamburger" onclick="toggleMenu()"></a>
     </div>
-    <div class="w3-col s2">
-        <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
-    </div>
-    <div class="w3-col s2">
-        <a href="#experience" class="w3-button w3-block w3-black">EXPERIENCE</a>
-    </div>
-    <div class="w3-col s2">
-        <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
-    </div>
-    <div class="w3-col s2">
-        <a href="#blog" class="w3-button w3-block w3-black">BLOG</a>
+    <div class="nav-right">
+      <a href="#about" class="w3-button w3-block w3-black">ABOUT</a>
+      <a href="#experience" class="w3-button w3-block w3-black">EXPERIENCE</a>
+      <a href="#contact" class="w3-button w3-block w3-black">CONTACT</a>
+      <a href="#blog" class="w3-button w3-block w3-black">BLOG</a>
     </div>
     <div class="w3-col s8">
         <a href="javascript:void(0);" class="icon w3-button w3-block w3-black" onclick="toggleMenu()">
@@ -38,119 +34,207 @@
     
     
   </div>
+<<<<<<< HEAD
 <!-- </div> -->
+=======
+>>>>>>> master
 
-<!-- Header with image -->
-<header class="bgimg w3-display-container w3-grayscale-min" id="home">
-  <div class="w3-display-middle w3-center">
-    <span class="w3-text-white" style="font-size:40px">Welcome to<br>Smile's World 🤗</span>
-  </div>
-</header>
-
-<!-- Add a background color and large text to the whole page -->
-<div class="w3-sand w3-grayscale w3-large">
-
-<!-- About Container -->
-<div class="w3-container" id="about">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">THE SMILE</span></h5>
-    <p>Smile is a full-stack web engineer, who is also thrilled in leadership and entrepreneurship. Likewise, she utilizes her right-brain for design, performance, and creativity, like craft, singing, and photographs.</p>
-    <p></p>
-    <div class="w3-panel w3-leftbar w3-light-grey">
-      <p><i>"Give me six hours to chop down a tree and I will spend the first four sharpening the axe.</i></p>
-      <p class="w3-right">-- Abraham Lincoln</p>
-    </div>
-  </div>
-</div>
-
-<!-- Menu Container -->
-<div class="w3-container" id="experience">
-  <div class="w3-content" style="max-width:700px">
- 
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">EXPERIENCE</span></h5>
-  
-    <div class="w3-row w3-center w3-card w3-padding">
-      <a href="javascript:void(0)" onclick="openMenu(event, 'work');" id="myLink">
-        <div class="w3-col s6 tablink">Work</div>
-      </a>
-      <a href="javascript:void(0)" onclick="openMenu(event, 'publication');">
-        <div class="w3-col s6 tablink">Publication</div>
-      </a>
+  <div class="container">
+    <!-- Header with image -->
+    <div class="bgimg w3-display-container" id="home">
+      <div class="w3-display-middle">
+        <span class="w3-text-white" style="font-size:40px">Welcome to Smile's World 🤗</span>
+      </div>
     </div>
 
-    <div id="work" class="w3-container menu w3-padding-48 w3-card">
-      <h5>Lead Software Engineer</h5>
-      <p class="w3-text-black">Centivizer Inc.</p>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5>Research Assistant</h5>
-      <p class="w3-text-black">School of Information Technology,
-          <br>
-          King Mongkut's University of Technology Thonburi
-      </p>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p>
+    <!-- Add a background color and large text to the whole page -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+      <!-- About Container -->
+      <div class="w3-container" id="about">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-64"><span class="section-header">THE SMILE</span></h5>
+          <p>Smile is a full-stack web engineer, who is also skills in other tech areas, e.g., deep learning,
+            bioinformatics. She is thrilled in leadership and entrepreneurship. Currently, she
+            is working on something awesome but secret with friends 🤔.
+          </p>
+          <p>
+            Apart of activities on left-brain load, she utilizes her right-brain for design, fashion, performance, and
+            creativity, like arts, craft, singing, and
+            <a href="https://www.eyeem.com/u/smiile8888" target="_blank">photographs</a>.
+          </p>
+          <p>
+            She is always down to earth and down to most of sports, e.g., swimming, basketball, badminton, etc.
+          </p>
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p>Her motto for professional life:</p>
+            <p><i>"Give me six hours to chop down a tree and I will spend the first four sharpening the axe.</i></p>
+            <p class="w3-right">-- Abraham Lincoln</p>
+          </div>
+
+          <div class="w3-panel w3-leftbar w3-light-grey">
+            <p>Her motto for personal authentic life:</p>
+            <p><i>"Be who you are and say what you feel, because those who mind don’t matter and those who matter don’t
+                mind.</i></p>
+            <p class="w3-right">-- Still debating who said this</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Menu Container -->
+      <div class="w3-container" id="experience">
+        <div class="w3-content" style="max-width:700px">
+
+          <h5 class="w3-center w3-padding-48"><span class="section-header">EXPERIENCE</span></h5>
+
+          <div class="w3-row w3-center w3-card w3-padding">
+            <a href="javascript:void(0)" onclick="openMenu(event, 'work');" id="myLink">
+              <div class="w3-col s4 tablink">Work</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'publication');">
+              <div class="w3-col s4 tablink">Publication</div>
+            </a>
+            <a href="javascript:void(0)" onclick="openMenu(event, 'project');">
+              <div class="w3-col s4 tablink">Project</div>
+            </a>
+          </div>
+
+          <div id="work" class="w3-container menu w3-padding-48 w3-card">
+            <h5>Senior Software Developer</h5>
+            <p class="w3-text-grey">Centivizer Inc.</p>
+            <!-- <p class="w3-text-grey"></p><br> -->
+
+            <h5>Software Engineer & Co-organizer</h5>
+            <p class="w3-text-grey">School of Information Technology,
+              <br>
+              King Mongkut's University of Technology Thonburi
+            </p>
+
+            <h5>Research Assistant</h5>
+            <p class="w3-text-grey">School of Information Technology,
+              <br>
+              King Mongkut's University of Technology Thonburi
+            </p>
+            <!-- <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br> -->
+            <h5>Software Engineer (Internship)</h5>
+            <p class="w3-text-grey">Thomson Reuters (Thailand)</p>
+
+            <h5>Software Engineer (Internship)</h5>
+            <p class="w3-text-grey">Microsoft Innovation Center Thailand</p>
+          </div>
+
+          <div id="publication" class="w3-container menu w3-padding-48 w3-card">
+            <ul>
+              <li>
+                <b>Thanapattheerakul, T.,</b> Engchuan, W., Chan, J.H., 2020. <b>Predicting the effect of variants on
+                  splicing using Convolutional Neural Networks.</b> PeerJ8:e9470. <a
+                  href="http://doi.org/10.7717/peerj.9470" target="_blank">http://doi.org/10.7717/peerj.9470</a>.
+              </li>
+              <br>
+              <li>
+                <b>Thanapattheerakul, T.,</b> Mao, K., Amoranto, J. and Chan, J.H., 2018, December. <a
+                  href="https://www.researchgate.net/publication/329548658_Emotion_in_a_Century_A_Review_of_Emotion_Recognition"
+                  target="_blank"><b>Emotion in a Century: A Review of Emotion Recognition.</b></a> InProceedings of the
+                10th International Conference on Advances in Information Technology(p. 17). ACM.
+              </li>
+              <br>
+              <li>
+                <b>Thanapattheerakul, T.,</b> Engchuan, W., Merico, D., Hashimoto, K., Doungpan, N. and Chan, J.H.,
+                2018, December. <a href="https://site.ieee.org/thailand-cis/files/2018/11/JSCI6-Paper-5.pdf"
+                  target="_blank"><b>RNA Splice Sites Classifica-tion Using Convolutional Neural Network Models.</b></a>
+                InPreprint of the 6th Joint Symposium on Computational Intelligence (JSCI6)(pp. 10-13).ISBN (e-book)
+                978-616-93265-0-2.
+              </li>
+              <br>
+              <li>
+                <b>Thanapattheerakul, T.,</b> Doungpan, N. and Chan, J.H., 2018, March. <b>Subnetwork Identification and
+                  Visualization based on Dissimilarity Gene-set Profiles of Gene Co-Expressions.</b> InProceedings of
+                the First International Symposium on AI for ASEAN Development. IEEE.
+              </li>
+              <br>
+              <li>
+                <b>Thanapattheerakul, T.,</b> Doungpan, N. and Chan, J.H., 2018, March. <b>Subnetwork Identification
+                  based on Dissimilarity Profiles of GeneCo-Expressions.</b> InProceedings of the 4th Joint Symposium on
+                Computational Intelligence(pp. 12-14). IEEE.
+              </li>
+              <br>
+              <li>
+                <b>Thanapattheerakul, T.,</b> Kongmanee, J. and Chan, J.H., 2017, August. <b>Network-based visualization
+                  tool for analyzing gene expression data.</b> InProceedings of the 10th International Symposium on
+                Visual Information Communication and Interaction(pp. 77-78). ACM.
+              </li>
+              <br>
+              <li>
+                Kongmanee, J., <b>Thanapattheerakul, T.</b> and Chan, J.H., 2016, December. <b>Parallel Affinity
+                  Propagation Clustering in Identifying Sub-Network Biomarker Genes of Lung Cancer.</b> InProceedings of
+                the 7th International Conference on Computational Systems-Biology and Bioin-formatics(pp. 19-23). ACM.
+              </li>
+            </ul>
+          </div>
+
+          <div id="project" class="w3-container menu w3-padding-48 w3-card">
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p><br>
+
+            <h5></h5>
+            <p class="w3-text-grey"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact/Area Container -->
+      <div class="w3-container" id="contact" style="padding-bottom:32px;">
+        <div class="w3-content" style="max-width:700px">
+          <h5 class="w3-center w3-padding-48"><span class="section-header">WHERE TO CONNECT</span></h5>
+          <p><span class="w3-tag">FYI!</span> Smile'd be so happy to connect with you all 😉</p>
+          <!-- <img src="./asset/img/map.jpg" class="w3-image" style="width:100%"> -->
+          <form action="mailto:th.thanyathorn@gmail.com" method="post" enctype="text/plain" target="_blank">
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="mail" placeholder="Email" required name="Mail"></p>
+            <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required
+                name="Message">
+            </p>
+            <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button> <button class="w3-button w3-gray"
+                type="reset">RESET</button></p>
+          </form>
+        </div>
+      </div>
+
+      <!-- End page content -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+    <div id="social-media">
+      <a href="https://www.linkedin.com/in/thanyathorn-thanapattheerakul/" target="_blank"><i
+          class="fa fa-linkedin w3-hover-opacity"></i></a>
+      <a href="https://github.com/smiile8888" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
+      <a href="https://twitter.com/smiile8888" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     </div>
 
-    <div id="publication" class="w3-container menu w3-padding-48 w3-card">
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p><br>
-    
-      <h5></h5>
-      <p class="w3-text-grey"></p>
-    </div>  
-  </div>
-</div>
-
-<!-- Contact/Area Container -->
-<div class="w3-container" id="contact" style="padding-bottom:32px;">
-  <div class="w3-content" style="max-width:700px">
-    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">WHERE TO CONNECT</span></h5>
-    <p><span class="w3-tag">FYI!</span> Smile'd be so happy to connect with you all 😉</p>
-    <img src="./asset/img/map.jpg" class="w3-image" style="width:100%">
-    <form action="mailto:th.thanyathorn@gmail.com" method="post" enctype="text/plain" target="_blank">
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="mail" placeholder="Email" required name="Mail"></p>
-      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
-      <p><button class="w3-button w3-black" type="submit">SEND MESSAGE</button> <button class="w3-button w3-gray" type="reset">RESET</button></p>
-    </form>
-  </div>
-</div>
-
-<!-- End page content -->
-</div>
-
-<!-- Footer -->
-<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
-    <a href="https://www.linkedin.com/in/thanyathorn-thanapattheerakul/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
-    <a href="https://github.com/smiile8888" target="_blank"><i class="fa fa-github w3-hover-opacity"></i></a>
-    <a href="https://twitter.com/smiile8888" target="_blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
     <div>
-        <p>Copyright © 2020<br>Thanyatahorn Thanapattheerakul</p>
+      <p>Copyright © 2020<br>Thanyatahorn Thanapattheerakul</p>
     </div>
-</footer>
+  </footer>
 
-<script src="./js/app.js"></script>
-<script>
+  <script src="./js/app.js"></script>
+  <script>
     document.getElementById("myLink").click();
-</script>
+  </script>
 
 </body>
+
 </html>
